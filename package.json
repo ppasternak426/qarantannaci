@@ -1,0 +1,22 @@
+{
+  "name": "qarantannaci",
+  "version": "1.0.0",
+  "description": "QArantanna test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppasternak426/qarantannaci.git"
+  },
+  "keywords": [
+    "qarantanna"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppasternak426/qarantannaci/issues"
+  },
+  "homepage": "https://github.com/ppasternak426/qarantannaci#readme"
+}
