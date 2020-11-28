@@ -4,7 +4,9 @@
   "description": "QArantanna test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/ppasternak426/qarantannaci/issues"
   },
-  "homepage": "https://github.com/ppasternak426/qarantannaci#readme"
+  "homepage": "https://github.com/ppasternak426/qarantannaci#readme",
+  "dependencies": {
+    "pixi.js": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "parcel-bundler": "^1.12.4"
+  }
 }
