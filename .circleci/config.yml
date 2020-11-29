@@ -29,7 +29,7 @@ jobs:
       - store_artifacts:
           path: dist/
       - save_cache:
-          key: distribution-{{checksum "dist"}}
+          key: distribution-{{.BuildNum}}
           paths:
             - dist/
   deploy:
@@ -39,7 +39,7 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - distribution-{{checksum "dist"}}
+            - distribution-{{.BuildNum}}
             - distribution
       - add_ssh_keys:
           fingerprints:
