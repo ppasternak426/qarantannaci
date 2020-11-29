@@ -21,6 +21,6 @@ PIXI.Loader.shared.add('logo', logo).load((loader, resources) => {
 	const exactValueProvider = new ExactValueProvider();
 
 	app.ticker.add(() => {
-		image.rotation += exactValueProvider.giveMeOneHundredth();
+		image.rotation -= exactValueProvider.giveMeOneHundredth();
 	});
 });
