@@ -1,4 +1,4 @@
-import logo from "../img/logo.png";
+import logo from "./img/logo.png";
 import * as PIXI from 'pixi.js';
 import ExactValueProvider from "./ExactValueProvider";
 
