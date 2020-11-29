@@ -45,6 +45,9 @@ jobs:
           fingerprints:
             - "e4:47:d5:15:58:e3:cb:1a:2b:17:9e:02:10:bb:37:47"
       - run:
+          name: Clean up previous build
+          command: ssh root@51.91.96.87 -p 9050 'rm -r /var/www/html/*'
+      - run:
           name: Deploy using SCP
           command: scp -P 9050 -r ~/qa-test/dist/* "root@51.91.96.87:/var/www/html/"
 workflows:
