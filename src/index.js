@@ -10,7 +10,7 @@ PIXI.Loader.shared.add('logo', logo).load((loader, resources) => {
 
 	const image = new PIXI.Sprite(resources.logo.texture);
 
-	image.x = 0;
+	image.x = app.renderer.width;
 	image.y = app.renderer.height / 2;
 
 	image.anchor.x = 0.5;
