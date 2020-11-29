@@ -29,7 +29,7 @@ jobs:
       - store_artifacts:
           path: dist/
       - save_cache:
-          key: distribution
+          key: distribution-{{checksum "dist"}}
           paths:
             - dist/
   deploy:
@@ -38,7 +38,9 @@ jobs:
     working_directory: ~/qa-test
     steps:
       - restore_cache:
-          key: distribution
+          keys:
+            - distribution-{{checksum "dist"}}
+            - distribution
       - add_ssh_keys:
           fingerprints:
             - "e4:47:d5:15:58:e3:cb:1a:2b:17:9e:02:10:bb:37:47"
